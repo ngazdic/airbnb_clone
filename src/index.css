@@ -11,3 +11,13 @@ main h3 {
 main p {
 	font-family: 'Poppins';
 }
+
+.cardMain h3,
+.cardMain p {
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.cardMain p span {
+	font-weight: 600;
+}

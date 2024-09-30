@@ -1,11 +1,10 @@
 import React from 'react';
-import MainImg from '../images/mainImage.png';
 
 function Main() {
 	return (
-		<main>
-			<div className='text-center'>
-				<img src={MainImg} alt='Main image' />
+		<main className='mb-5'>
+			<div className='text-center mb-5'>
+				<img src='/images/mainImage.png' alt='Main image' />
 			</div>
 			<div className='px-5'>
 				<h3>Online Experiences</h3>
