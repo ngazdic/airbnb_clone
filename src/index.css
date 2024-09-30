@@ -1,0 +1,13 @@
+nav {
+	box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+main h3 {
+	font-family: 'Poppins';
+	font-weight: 600;
+	text-transform: capitalize;
+}
+
+main p {
+	font-family: 'Poppins';
+}
