@@ -1,16 +1,33 @@
 import React from 'react';
 
-function Card() {
+function Card(props) {
+	let boxIcon;
+
+	if (props.item.openSpots === 0) {
+		boxIcon = 'SOLD OUT';
+	} else if (props.item.location === 'Online') {
+		boxIcon = 'ONLINE';
+	}
+
 	return (
-		<section className='cardMain px-5'>
-			<img className='d-block' src='../public/images/Katie.png' alt='Katie' />
-			<img src='../public/images/Star.png' alt='' />
+		<section className='cardMain position-relative'>
+			{boxIcon ? <p className='boxIcon position-absolute'>{boxIcon}</p> : null}
+			<img
+				className=' d-block'
+				src={`/images/${props.item.coverImg}`} // Access coverImg from props.item
+				alt='Katie'
+				style={{ width: '180px' }} // Fix the style attribute
+			/>
+			<img src='/images/Star.png' alt='Star' />
 			<p className='d-inline-block'>
-				5.0 <span className='text-muted'>(6) &#x2022; USA</span>
+				{props.item.stats.rating}
+				<span className='text-muted'>
+					({props.item.stats.reviewCount}) &#x2022; {props.item.location}
+				</span>
 			</p>
-			<h3 className='fo'>Life lessons with Katie Zaferes</h3>
+			<h3 className='fo'>{props.item.title}</h3>
 			<p>
-				<span>From 136$</span> / person
+				<b>From ${props.item.price}</b> / person
 			</p>
 		</section>
 	);

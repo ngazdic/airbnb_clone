@@ -6,7 +6,7 @@ function Main() {
 			<div className='text-center mb-5'>
 				<img src='/images/mainImage.png' alt='Main image' />
 			</div>
-			<div className='px-5'>
+			<div>
 				<h3>Online Experiences</h3>
 				<p>
 					Join unique interactive activities led by one-of-a-kind hosts—all
