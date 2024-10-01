@@ -2,8 +2,8 @@ import React from 'react';
 
 function Main() {
 	return (
-		<main className='mb-5'>
-			<div className='text-center mb-5'>
+		<main className='mb-5 '>
+			<div className='text-left text-md-center mb-5'>
 				<img src='/images/mainImage.png' alt='Main image' />
 			</div>
 			<div>
